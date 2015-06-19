@@ -1,0 +1,39 @@
+<html><head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 100%;
+        width:115px;
+      }
+      .icon {
+        width:25px;
+        display: inline-block;
+        color:green;
+      }
+      .state {
+        color:#404040;
+        cursor: pointer;
+      }
+      .state:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="ext/font-awesome/css/font-awesome.min.css">
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="../jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="state" id="none"><div class="icon"><i class="active fa fa-check"></i></div>None</div>
+    <!-- <div class="state" id="basic"><div class="icon"></div>Basic</div> -->
+    <div class="state" id="changeout"><div class="icon"></div>Changeout</div>
+   
+  </body>
+</html>
